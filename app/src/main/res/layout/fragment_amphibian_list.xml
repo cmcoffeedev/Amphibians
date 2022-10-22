@@ -32,6 +32,7 @@
         <!-- TODO: set the listData binding to the list of Amphibians from the view model -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
+            app:listData="@{viewModel.amphibiansViewState.amphibians}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
@@ -43,6 +44,7 @@
         <!-- TODO: set the apiStatus binding to the status from the view model -->
         <ImageView
             android:id="@+id/status_image"
+            app:apiStatus="@{viewModel.amphibiansViewState.status}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
