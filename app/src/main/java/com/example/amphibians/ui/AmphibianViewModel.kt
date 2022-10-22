@@ -70,7 +70,7 @@ class AmphibianViewModel : ViewModel() {
 
     fun onAmphibianClicked(amphibian: Amphibian) {
         // TODO: Set the amphibian object
-        _amphibianViewState.postValue(AmphibianViewState(amphibian, AmphibianApiStatus.DONE))
+        _amphibianViewState.value = AmphibianViewState(amphibian, AmphibianApiStatus.DONE)
     }
 
     init {
